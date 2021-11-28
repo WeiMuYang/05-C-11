@@ -1,4 +1,9 @@
-#include <iostream> 
+#include <iostream>
+#include <string>
+#include <memory>
+using namespace std;
+
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -36,8 +41,8 @@ int main()
     ptest.get()->print();
     ptest->getStr() += "world !";
     (*ptest).print();
-    // ÖØÐÂ°ó¶¨Ö¸ÏòµÄ¶ÔÏó£¬¶øÔ­À´µÄ¶ÔÏóÔò»á±»ÊÍ·Å
-    ptest.reset(new Test("123"));  // ´ËÊ±»áÊÍ·ÅptestÖ®Ç°Ö¸ÏòµÄhello world
+    // é‡æ–°ç»‘å®šæŒ‡å‘çš„å¯¹è±¡ï¼Œè€ŒåŽŸæ¥çš„å¯¹è±¡åˆ™ä¼šè¢«é‡Šæ”¾
+    ptest.reset(new Test("123"));  // æ­¤æ—¶ä¼šé‡Šæ”¾ptestä¹‹å‰æŒ‡å‘çš„hello world
     ptest->print();
     return 0;
 }
