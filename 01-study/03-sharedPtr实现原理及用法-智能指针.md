@@ -3,6 +3,10 @@
 > ######  _标签:_   ![](https://img.shields.io/badge/技术类-yellowgreen.svg)   ![](https://img.shields.io/badge/C++11/14-用户手册-blue.svg)   [![](https://img.shields.io/badge/链接-手动实现shared_ptr-brightgreen.svg)](https://www.cnblogs.com/tianshihao/p/14378918.html)   [![](https://img.shields.io/badge/链接-shared_ptr与线程安全-brightgreen.svg)](https://www.cnblogs.com/tianshihao/p/14378918.html)    [![](https://img.shields.io/badge/链接-代码文件-orange.svg)](../02-code/)        
 >
 
+## 1 基本用法 
+
+智能指针本质上是一个模板类，通过类的声明周期自动结束效果，实现的自动释放。虽然叫指针，但是本质上是一个对象。一般不会去new一个智能指针，如果自己new创建的需要自己手动释放。      
+
 ## 1 share_ptr  [官方文档](http://www.cplusplus.com/reference/memory/shared_ptr/?kw=shared_ptr)    
 
 共享指针
